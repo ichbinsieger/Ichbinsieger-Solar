@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaUserCheck, FaUsers, FaTrophy, FaComments } from 'react-icons/fa';
 
 const SolarBenefits = () => {

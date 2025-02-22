@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import project1 from "../assets/1kva.jpg";
-import project2 from "../assets/levi.jpg"; 
-import project3 from "../assets/men.jpg"; 
-import project4 from "../assets/roof.jpg"; 
-import project5 from "../assets/inverter.jpg"; 
-import project6 from "../assets/2kv2.jpg"; 
+import project2 from "../assets/levi.jpg";
+import project3 from "../assets/men.jpg";
+import project4 from "../assets/roof.jpg";
+import project5 from "../assets/inverter.jpg";
+import project6 from "../assets/2kv2.jpg";
 
 function Projects() {
-  const [hoverId, setHoverId] = useState(null);
+  const [hoverId, setHoverId] = useState<number | null>(null);
 
   const projects = [
     {
@@ -55,7 +55,6 @@ function Projects() {
           Some Of Our Projects
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
           {projects.map((project) => (
             <div
               key={project.id}
@@ -67,8 +66,6 @@ function Projects() {
                 alt={project.name}
                 className="w-full h-64 object-cover"
               />
-
-              
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white text-center p-4">
                 <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
                 <p className="text-sm">{project.description}</p>
@@ -77,31 +74,28 @@ function Projects() {
           ))}
         </div>
 
-
         {hoverId && (
           <div className="fixed inset-0 flex items-center justify-center z-20">
             <div
               className="absolute inset-0 bg-black/50"
               onClick={() => setHoverId(null)}
             />
-
-   
             <div className="relative z-30 bg-white rounded-lg shadow-2xl p-6 w-11/12 md:w-3/4 lg:w-1/2 h-[70vh] overflow-auto">
               <img
-                src={projects.find((p) => p.id === hoverId).image}
-                alt={projects.find((p) => p.id === hoverId).name}
+                src={projects.find((p) => p.id === hoverId)!.image}
+                alt={projects.find((p) => p.id === hoverId)!.name}
                 className="w-full h-[50vh] object-contain rounded-lg"
               />
               <div className="mt-6 text-center">
                 <h3 className="text-2xl font-bold mb-4 text-[#0065A4]">
-                  {projects.find((p) => p.id === hoverId).name}
+                  {projects.find((p) => p.id === hoverId)!.name}
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  {projects.find((p) => p.id === hoverId).description}
+                  {projects.find((p) => p.id === hoverId)!.description}
                 </p>
                 <button
                   className="mt-6 bg-[#0065A4] text-white px-6 py-2 rounded-lg hover:bg-[#005080] transition-colors duration-300"
-                  onClick={() => setHoverId(null)} 
+                  onClick={() => setHoverId(null)}
                 >
                   Close
                 </button>

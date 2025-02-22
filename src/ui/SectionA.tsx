@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { motion } from "framer-motion"; 
 import inverterimg from "../assets/men.jpg";
 import men from "../assets/inverter.jpg";

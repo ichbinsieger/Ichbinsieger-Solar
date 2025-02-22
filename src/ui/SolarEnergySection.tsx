@@ -1,6 +1,6 @@
-import React from "react";
+
 import { motion } from "framer-motion";
-import { FaCoins, FaLeaf, FaSolarPanel, FaHandHoldingHeart, FaPiggyBank } from "react-icons/fa";
+import { FaCoins, FaLeaf, FaSolarPanel, FaHandHoldingHeart} from "react-icons/fa";
 
 
 function SolarEnergySection() {
