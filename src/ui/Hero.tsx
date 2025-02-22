@@ -32,7 +32,7 @@ function Hero() {
             transition={{ duration: 1, delay: 1.5 }}
             className="mt-6 md:mt-8 bg-green-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-600 transition-colors"
           >
-            Get a free quote
+              <a href="#contact"c className='cursor-pointer'>   Get a free quote </a>
           </motion.button>
          </div>
           </div>

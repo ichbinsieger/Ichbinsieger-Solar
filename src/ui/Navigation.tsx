@@ -24,13 +24,13 @@ function Navigation() {
                 <FaTimes onClick={()=>OpenMenu(Menu == false)} className='md:hidden text-xl mb-2'/>
                 <div className='w-full h-[100vh] text-white flex flex-col items-center space-y-20 mt-7 pt-10 bg-black absolute z-10 left-0'> 
                 <a className='' href="/">Home</a>
-            <a href="#power">Service</a>
-            <a href="#contact">Contact Us</a>
-            <a href="#project" className=''>Works</a>
-            <button className=' w-9/12 cursor-pointer bg-green-500 py-3 px-5 rounded font-semibold'> Get a quote </button>
+            <a href="#power" onClick={()=>OpenMenu(Menu == false)}>Service</a>
+            <a href="#contact" onClick={()=>OpenMenu(Menu == false)}>Contact Us</a>
+            <a href="#projects" onClick={()=>OpenMenu(Menu == false)} className=''>Works</a>
+            <a href='#contact'onClick={()=>OpenMenu(Menu == false)} className=' w-9/12 cursor-pointer flex justify-center items-center bg-green-500 py-3 px-5 rounded font-semibold'> Get a quote </a>
                  </div>
             </div>:<FaBars className='hidden'/> }
-            <button className=' hidden cursor-pointer md:inline  bg-green-500 py-3 px-5 rounded font-semibold'> Get a quote </button>
+            <a href='#contact' className=' hidden cursor-pointer md:inline  bg-green-500 py-3 px-5 rounded font-semibold'> Get a quote </a>
         </nav>
       
     </div>

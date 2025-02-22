@@ -1,11 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion"; // Import Framer Motion for animations
+import { motion } from "framer-motion";
 import { FaCoins, FaLeaf, FaSolarPanel, FaHandHoldingHeart, FaPiggyBank } from "react-icons/fa";
 
 
 function SolarEnergySection() {
   return (
-      <div className="md:px-24 bg-gray-100">
+      <div className="md:px-24 bg-gray-100" id="power">
         <div className=" py-20 flex justify-center items-center">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row lg:space-x-0">
       
@@ -45,10 +45,9 @@ function SolarEnergySection() {
           </motion.div>
         </div>
 
-        {/* Right Section: Grid of Benefits */}
+
         <div className="lg:w-1/2 mt-16 lg:mt-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Benefit 1: Reduce Electricity Bills */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +64,6 @@ function SolarEnergySection() {
               </p>
             </motion.div>
 
-            {/* Benefit 2: Reduce Carbon Footprint */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +80,6 @@ function SolarEnergySection() {
               </p>
             </motion.div>
 
-            {/* Benefit 3: Cleaner Future */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +96,7 @@ function SolarEnergySection() {
               </p>
             </motion.div>
 
-            {/* Benefit 4: Solar Panels on Roofs */}
+          
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}

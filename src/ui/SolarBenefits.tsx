@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUserCheck, FaUsers, FaTrophy, FaComments } from 'react-icons/fa'; // Updated Icons
+import { FaUserCheck, FaUsers, FaTrophy, FaComments } from 'react-icons/fa';
 
 const SolarBenefits = () => {
   return (
