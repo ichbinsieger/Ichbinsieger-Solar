@@ -9,14 +9,14 @@ function SolarEnergySection() {
         <div className=" py-20 flex justify-center items-center">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row lg:space-x-0">
       
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 flex flex-col justify-center">
          
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className=" text-2xl md:text-4xl font-bold text-center md:text-left text-[#36689E] mb-8"
+            className=" text-2xl md:text-4xl font-bold text-center md:text-left   text-[#36689E] mb-8"
           >
             Power Your Home with Solar Energy
           </motion.h1>
@@ -27,7 +27,7 @@ function SolarEnergySection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-base md:text-xl text-center md:text-left text-gray-700 mb-16"
+            className="text-base md:text-xl text-center md:text-left text-gray-700 md:mb-1 mb-16"
           >
             Save Money and Reduce Your Carbon Footprint
           </motion.p>
@@ -37,7 +37,7 @@ function SolarEnergySection() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 1.2 }}
             viewport={{ once: true }}
-            className="flex items-center md:items-start justify-center md:justify-start mt-16"
+            className="flex items-center md:items-start justify-center md:justify-start mt-16 md:mt-5"
           >
             <button className="bg-[#36689E] text-white px-8 py-3 rounded-lg text-base font-semibold hover:bg-[#4F8EC9] transition-colors duration-300">
               CONTACT US
@@ -47,7 +47,7 @@ function SolarEnergySection() {
 
 
         <div className="lg:w-1/2 mt-16 lg:mt-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}

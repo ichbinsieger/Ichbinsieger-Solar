@@ -94,7 +94,7 @@ function Projects() {
                   {projects.find((p) => p.id === hoverId)!.description}
                 </p>
                 <button
-                  className="mt-6 bg-[#0065A4] text-white px-6 py-2 rounded-lg hover:bg-[#005080] transition-colors duration-300"
+                  className="mt-6 bg-[#0065A4] text-white px-6 py-2 rounded-lg hover:bg-[#005080] transition-colors duration-300 absolute -top-2 right-4"
                   onClick={() => setHoverId(null)}
                 >
                   Close

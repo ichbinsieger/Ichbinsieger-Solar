@@ -44,7 +44,7 @@ function Navigation() {
               <a
                 href='#contact'
                 onClick={() => OpenMenu(false)}
-                className='w-9/12 cursor-pointer flex justify-center items-center bg-green-500 py-3 px-5 rounded font-semibold'
+                className='w-9/12  text-white cursor-pointer flex justify-center items-center bg-green-500 py-3 px-5 rounded font-semibold'
               >
                 Get a quote
               </a>
@@ -56,7 +56,7 @@ function Navigation() {
 
         <a
           href='#contact'
-          className='hidden cursor-pointer md:inline bg-green-500 py-3 px-5 rounded font-semibold'
+          className='hidden cursor-pointer text-white md:inline bg-green-500 py-3 px-5 rounded font-semibold'
         >
           Get a quote
         </a>

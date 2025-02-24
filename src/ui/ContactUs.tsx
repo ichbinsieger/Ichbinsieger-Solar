@@ -1,4 +1,5 @@
 import  { useState } from "react";
+import { FaInbox, FaWhatsapp } from "react-icons/fa";
 
 function ContactUs() {
     const [message, setMessage] = useState("");
@@ -53,10 +54,10 @@ function ContactUs() {
               type="submit"
               className="px-6 py-2 md:px-8 md:py-3 bg-[#0065A4] text-white font-semibold rounded-sm hover:bg-[#00518a] transition-all focus:outline-none focus:ring-2 focus:ring-[#0065A4] focus:ring-offset-2"
             >
-              Send via Mail
+              Send via Mail <FaInbox className="inline"/>
             </button>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="  px-6 py-2 md:px-8 md:py-3 bg-[#0065A4] text-white font-semibold rounded-sm hover:bg-[#00518a] transition-all focus:outline-none focus:ring-2 focus:ring-[#0065A4] focus:ring-offset-2" >
-             Send via WhatsApp
+             Send via whatsapp <FaWhatsapp className="inline "/>
               </a>
           </div>
         </form>
