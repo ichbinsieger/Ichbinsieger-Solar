@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <FaPhone className="mr-2" />
-                    +234809556675
+                    +2348095556675
               </li>
             </ul>
           </div>

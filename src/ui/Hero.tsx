@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 function Hero() {
   return (
-    <div>
-         <div className="bg-[url('./assets/roof2.jpg')] bg-cover relative h-[100vh] bg-center">
+    <div>   <div className="">
+      
  
          <div className="absolute inset-0 bg-black/50"></div>
          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">

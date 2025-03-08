@@ -16,8 +16,11 @@ function App() {
   return (
     <>
       <div>
+      <div className="bg-[url('./assets/roof2.jpg')] bg-cover relative h-[100vh] bg-center">
         <Navigation/>
         <Hero/>
+        </div>
+        
         <SectionA/>
         <SolarEnergySection/>
         <SolarBenefits/>

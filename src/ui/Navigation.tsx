@@ -1,12 +1,26 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../assets/logoview.png';
 
 function Navigation() {
   const [Menu, OpenMenu] = useState(false);
+  const [bg, setBg] = useState("bg-transparent text-white");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight * 0.4) {
+        setBg("bg-gray-200 shadow-md text-black");
+      } else {
+        setBg("bg-transparent text-white");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className='flex fixed top-0 z-50 left-0 right-0 items-center justify-between py-6 px-5 bg-gray-200'>
+    <div className={`flex fixed top-0 z-50 left-0 right-0 items-center justify-between py-6 px-5 transition-colors duration-300 ${bg}`}>
       <div className='md:pl-8 flex flex-col-reverse items-center md:text-xs text-[10px] md:font-medium font-normal'>
         <p className='pt-[1px] md:pt-[0.5px]'>ICHBINSIEGER</p>
         <img src={logo} className='md:w-12 md:h-12 h-10 w-10' alt="" />
