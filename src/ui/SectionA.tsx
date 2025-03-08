@@ -17,7 +17,7 @@ function SectionA() {
   }, [images.length]);
 
   return (
-    <div className="flex justify-center items-center -mt-24 pb-10">
+    <div className="flex justify-center items-center -mt-44 pb-10">
    
       <div className="md:hidden w-full max-w-sm px-4">
         <motion.div
